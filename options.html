@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trivial Facts - Options</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="options" class="flex-center flex-column">
+        <h3>Number of Questions</h3>
+        <button
+          type="submit"
+          class="btn"
+          id="threeQuestionBtn"
+          onClick="setNumberOfQuestions(3)"
+        >
+          3
+        </button>
+        <button
+          type="submit"
+          class="btn"
+          id="tenQuestionsBtn"
+          onClick="setNumberOfQuestions(10)"
+        >
+          10
+        </button>
+        <br />
+        <h3>Difficulty</h3>
+        <button
+          class="btn difficulty"
+          id="easyDifficulty"
+          onClick="setDifficulty('easy')"
+        >
+          Easy
+        </button>
+
+        <button
+          class="btn difficulty"
+          id="mediumDifficulty"
+          onClick="setDifficulty('medium')"
+        >
+          Medium
+        </button>
+        <button
+          class="btn difficulty"
+          id="hardDifficulty"
+          onClick="setDifficulty('hard')"
+        >
+          Hard
+        </button>
+        <button
+          class="btn difficulty"
+          id="anyDifficulty"
+          onClick="setDifficulty('')"
+        >
+          Any
+        </button>
+        <button
+          class="btn blue"
+          id="startGameBtn"
+          onClick="goToGame()"
+          disabled
+        >
+          Start Game
+        </button>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
