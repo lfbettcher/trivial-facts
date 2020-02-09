@@ -64,6 +64,26 @@
   width: 0%;
 }
 
+/* phone screen portrait */
+@media (max-width: 550px) {
+  #hud {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hud-label {
+    margin-top: 1rem;
+  }
+  .hud-main-text {
+    margin: 0.6rem;
+    font-size: 2.4rem;
+  }
+  #question {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 /* LOADER */
 
 #loader {
